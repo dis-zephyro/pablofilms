@@ -1,0 +1,36 @@
+.b07 {
+	position: relative;
+	text-align: center;
+	background: #fff;
+	padding-top: 80px;
+	padding-bottom: 30px;
+
+	&:before {
+		top: 0;
+		left: 50%;
+		z-index: 200;
+		content: ' ';
+		margin-left: -30px;
+		position: absolute;
+		border: 30px solid transparent;
+		border-top: 30px solid #7F73BA;
+	}
+
+	.b07__video {
+		padding-bottom: 20px;
+
+		.b07__item {
+			margin: 0 0 40px 0;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.b07__video {
+
+			.b07__item {
+				margin: 0 25px 40px 25px;
+			}
+		}
+	}
+}

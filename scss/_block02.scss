@@ -1,0 +1,33 @@
+.b02 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	background: #dcdbd6 url("../img/b02_bg.jpg") top center no-repeat;
+
+	.img_head {
+		width: 100px;
+		margin-bottom: 30px;
+		display: inline-block;
+		border-bottom: 5px solid #fff;
+
+		img {
+			@include img-responsive(inline-block);
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+
+		.img_head {
+			width: auto;
+		}
+
+		.text {
+			width: 510px;
+			margin: 0 auto;
+		}
+	}
+	@media (min-width: $screen-md-min) {
+	}
+	@media (min-width: $screen-lg-min) {
+	}
+}

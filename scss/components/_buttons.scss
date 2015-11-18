@@ -1,0 +1,38 @@
+.btn {
+	margin:0;
+	color: #191919;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	text-decoration: none !important;
+	vertical-align: middle;
+	background-image: none;
+	background-color: #FBB03B;
+	touch-action: manipulation;
+	border-bottom: 3px solid #FB903B;
+	@include border-radius(4px);
+	@include transition(.3s);
+
+	&:hover {
+		color: #fff;
+		background: #9999cc;
+		text-decoration: none;
+		border-bottom-color: #7474a2;
+	}
+
+	&:active {
+		top: 1px;
+
+
+		&:focus {
+			color: #191919;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.b01 {
+	height: 700px;
+	position: relative;
+	background: url("../img/b01_bg.jpg") center no-repeat;
+
+	h1 {
+		text-align: center;
+		padding-top: 100px;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+
+	.b01__content {
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 300;
+		position: absolute;
+	}
+
+
+
+	@media (min-width: $screen-sm-min) {
+		margin-top: 120px;
+	}
+
+	@media (min-width: $screen-md-min) {
+
+	}
+
+	@media (min-width: $screen-lg-min) {
+
+	}
+}

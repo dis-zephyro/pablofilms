@@ -1,0 +1,116 @@
+* {
+	@include box-sizing(border-box);
+}
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html
+
+
+body {
+	position: relative;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	background-color: $body-bg;
+}
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+
+.container {
+	position: relative;
+	@include clearfix();
+}
+
+
+// Links
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		color: $link-color;
+		text-decoration: $link-hover-decoration;
+	}
+
+}
+
+
+// Headings
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	color: #191919;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h1 {
+	color: #191919;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+
+	h1 {
+		font-size: 33px;
+		line-height: 40px;
+	}
+
+	h2 {
+		font-size: 26px;
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+
+}
+
+@media (min-width: $screen-lg-min) {
+
+}

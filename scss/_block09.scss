@@ -1,0 +1,32 @@
+.b09 {
+	background: #C0FFB0;
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 50px;
+
+	&:before {
+		top: 0;
+		left: 50%;
+		z-index: 200;
+		content: ' ';
+		margin-left: -30px;
+		position: absolute;
+		border: 30px solid transparent;
+		border-top: 30px solid #DFDFDF;
+	}
+
+
+	@media (min-width: $screen-sm-min) {
+
+		.b09__form {
+			width: 420px;
+			margin: 0 auto;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+	}
+
+	@media (min-width: $screen-lg-min) {
+	}
+}
