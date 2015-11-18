@@ -61,7 +61,7 @@ jQuery(function($){
 
 $(document).ready(function() {
 
-    $('.bnt-send').click(function() {
+    $('.btn-send').click(function() {
 
         $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
         var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
@@ -76,16 +76,16 @@ $(document).ready(function() {
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, form:form, type:type}
+                data: {name: name, phone: phone, form:form, email:email}
             }).done(function(msg) {
-                console.log(name, phone, form, type);
+                console.log(name, phone, form, email);
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
                 /*
                  $.fancybox.open('#done', 'closeBtn : false');
                  setTimeout("$.fancybox.close()", 3000);
                  */
-                document.location.replace('./done.html');
+                document.location.replace('http://zephyrus.ru/project/2015/pablofilms/done.html');
             });
         }
     });
