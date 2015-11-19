@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="pablofilms" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="109.120.162.1" autoUploadExternalChanges="true">
     <serverData>
+      <paths name="109.120.162.1">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/webspace/httpdocs/pablofilms.ru/assets/template" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="pablofilms">
         <serverdata>
           <mappings>

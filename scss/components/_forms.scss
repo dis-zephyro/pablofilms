@@ -23,6 +23,10 @@
 	&:focus {
 		@include placeholder(transparent);
 	}
+
+	&.error {
+		border-color: #ff0000;
+	}
 }
 
 .red {

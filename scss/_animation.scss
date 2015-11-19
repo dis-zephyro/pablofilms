@@ -1,0 +1,21 @@
+.b02 .text,
+.b04 .img_head,
+.b04 .text {
+	opacity: 0;
+}
+
+.b02 .text.animated {
+	-webkit-animation: scaleUp .5s .3s forwards;
+	animation: scaleUp .5s .3s forwards;
+}
+
+
+.b04 .img_head.animated {
+	-webkit-animation: scaleUp .5s .3s forwards;
+	animation: scaleUp .5s .3s forwards;
+}
+
+.b04 .text.animated {
+	-webkit-animation: scaleUp .5s .3s forwards;
+	animation: scaleUp .5s .3s forwards;
+}

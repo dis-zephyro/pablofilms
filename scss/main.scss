@@ -29,8 +29,11 @@
 @import "components/responsive-utilities";
 @import "components/responsive-embed";
 
+@import "components/_animate";
+
 @import "../js/vendor/slick/slick";
 @import "font-awesome/font-awesome";
+@import "animation";
 
 // Site
 

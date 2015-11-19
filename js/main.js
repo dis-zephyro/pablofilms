@@ -57,39 +57,20 @@ jQuery(function($){
 });
 
 
-// Post
 
-$(document).ready(function() {
-
-    $('.btn-send').click(function() {
-
-        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
-        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
-        if(answer != false)
-        {
-            var $form = $(this).closest('form'),
-                name    =     $('input[name="name"]', $form).val(),
-                email    =     $('input[name="email"]', $form).val(),
-                phone   =     $('input[name="phone"]', $form).val(),
-                form   =     $('input[name="form"]', $form).val();
-            console.log(name, phone, form, email);
-            $.ajax({
-                type: "POST",
-                url: "form-handler.php",
-                data: {name: name, phone: phone, form:form, email:email}
-            }).done(function(msg) {
-                console.log(name, phone, form, email);
-                $('form').find('input[type=text], textarea').val('');
-                console.log('удачно');
-                /*
-                 $.fancybox.open('#done', 'closeBtn : false');
-                 setTimeout("$.fancybox.close()", 3000);
-                 */
-                document.location.replace('http://zephyrus.ru/project/2015/pablofilms/done.html');
-            });
+$(".scroll").each(function () { // анимация по скролу(используйте этот) достаточно добавить анимируемому блоку класс 'scroll' а css анимацию писать так: '.animated.класс_блока'
+    var block = $(this);
+    $(window).scroll(function() {
+        var top = block.offset().top;
+        var bottom = block.height()+top;
+        top = top - $(window).height();
+        var scroll_top = $(this).scrollTop();
+        if ((scroll_top > top) && (scroll_top < bottom)) {
+            if (!block.hasClass("animated")) {
+                block.addClass("animated");
+            }
+        } else {
+            block.removeClass("animated");
         }
     });
-
-
-
 });
