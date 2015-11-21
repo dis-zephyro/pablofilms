@@ -5493,8 +5493,16 @@ label {
   animation: scaleUp .5s .3s forwards; }
 
 .b04 .text.animated {
-  -webkit-animation: scaleUp .5s .5s forwards;
-  animation: scaleUp .5s .5s forwards; }
+  -webkit-animation: scaleUp .5s .3s forwards;
+  animation: scaleUp .5s .3s forwards; }
+
+.b06 .img_head.animated {
+  -webkit-animation: scaleUp .5s .3s forwards;
+  animation: scaleUp .5s .3s forwards; }
+
+.b06 .text.animated {
+  -webkit-animation: scaleUp .5s .3s forwards;
+  animation: scaleUp .5s .3s forwards; }
 
 .b01 {
   height: 700px;
@@ -5767,6 +5775,10 @@ label {
     position: absolute;
     border: 30px solid transparent;
     border-top: 30px solid #DFDFDF; }
+  .b09 .like {
+    padding-top: 20px; }
+    .b09 .like table {
+      margin: 0 auto; }
   @media (min-width: 768px) {
     .b09 .b09__form {
       width: 420px;
